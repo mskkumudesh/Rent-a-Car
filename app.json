@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "Car Rental App",
+    "slug": "car-rental-service",
+    "version": "1.0.0",
+    "scheme": "carrentalapp",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "icon": "./assets/icon.png",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourname.carrentalapp"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1B1F3B"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.yourname.carrentalapp",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow DriveShare to access your photos to add a car listing photo.",
+          "cameraPermission": "Allow DriveShare to access your camera to take a car listing photo."
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#1B1F3B"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": false
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "7e6c6683-54cc-41c4-b1a5-9d767b710f2c"
+      }
+    }
+  }
+}
